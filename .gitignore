@@ -46,6 +46,9 @@
 !/bspwm/bspwmrc
 !/sxhkd/sxhkdrc
 
+# Top bar — polybar
+!/polybar/config.ini
+
 # Notifications — dunst 
 !/dunst/dunstrc
 
