@@ -1,0 +1,25 @@
+{
+    "output": {
+        "bass_enhancer": {
+            "amount": 5.0,
+            "blend": 0.0,
+            "floor": 20.0,
+            "floor-active": false,
+            "harmonics": 8.5,
+            "input-gain": 0.0,
+            "output-gain": 0.0,
+            "scope": 80.0
+        },
+        "blocklist": [],
+        "convolver": {
+            "input-gain": 0.0,
+            "ir-width": 90,
+            "kernel-path": "/home/vini/.config/easyeffects/irs/results_crinacle_harman_in-ear_2019v2_QCY T5_QCY T5 minimum phase 48000Hz.irs",
+            "output-gain": -8.0
+        },
+        "plugins_order": [
+            "convolver",
+            "bass_enhancer"
+        ]
+    }
+}

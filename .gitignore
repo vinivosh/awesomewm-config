@@ -1,17 +1,37 @@
 # Ignore everything except what we specify with negations (lines starting with "!")
 *
 
+# Exclude some weird stuff that kept insisting on being tracked by git...
+/lite-xl/lpm/**/*
+
 # Include files ending with slash (a.k.a. directories)
 !*/
+
 
 # Include some important git stuff (from the root directory)
 !/LICENSE
 !/.gitignore
 !/README.md
 
+
+
+# * ############################################################################
+# * Window Manager (X11) and desktop environment related stuff
+# * ############################################################################
+
 # Include bspwm-related stuff
 !/bspwm/bspwmrc
 !/sxhkd/*
 
-# dunst config (notification daemon)
+# Notifications  — dunst config (notification daemon)
 !/dunst/*
+
+
+
+# * ############################################################################
+# * Audio
+# * ############################################################################
+
+# Audio — easyeffects presets and autoload configurations
+!/easyeffects/output/**/*
+!/easyeffects/autoload/**/*
