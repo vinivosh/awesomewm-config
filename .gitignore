@@ -16,6 +16,15 @@
 
 
 # * ############################################################################
+# * bash, fish and other terminal realted stuff
+# * ############################################################################
+
+!/fish/config.fish
+!/fish/fish_variables
+
+
+
+# * ############################################################################
 # * Window Manager (X11) and desktop environment related stuff
 # * ############################################################################
 
@@ -23,7 +32,7 @@
 !/bspwm/bspwmrc
 !/sxhkd/*
 
-# Notifications  — dunst config (notification daemon)
+# Notifications — dunst 
 !/dunst/*
 
 
