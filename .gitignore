@@ -84,6 +84,12 @@
 # Mime associations (default apps to open each file type)
 !/mimeapps.list
 
+# Definitions of default directories like Desktop, Downloads, Images, etc.
+!/user-dirs.dirs
+
+# Locale for this user
+!/user-dirs.locale
+
 
 
 # * ############################################################################
