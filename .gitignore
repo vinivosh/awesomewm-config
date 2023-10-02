@@ -9,5 +9,6 @@
 !/.gitignore
 !/README.md
 
-# Include bspwm stuff
+# Include bspwm-related stuff
 !/bspwm/bspwmrc
+!/sxhkd/sxhkdrc
