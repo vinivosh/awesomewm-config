@@ -1,8 +1,8 @@
 # Ignore everything except what we specify with negations (lines starting with "!")
 *
 
-# Exclude some weird stuff that kept insisting on being tracked by git...
-/lite-xl/lpm/**/*
+# # Exclude some weird stuff that kept insisting on being tracked by git...
+/lite-xl/lpm/
 
 # Include files ending with slash (a.k.a. directories)
 !*/
