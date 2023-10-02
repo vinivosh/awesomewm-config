@@ -1,0 +1,13 @@
+# Ignore everything except what we specify with negations (lines starting with "!")
+*
+
+# Include files ending with slash (a.k.a. directories)
+!*/
+
+# Include some important git stuff (from the root directory)
+!/LICENSE
+!/.gitignore
+!/README.md
+
+# Include bspwm stuff
+!/bspwm/bspwmrc
