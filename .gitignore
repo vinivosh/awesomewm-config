@@ -11,4 +11,7 @@
 
 # Include bspwm-related stuff
 !/bspwm/bspwmrc
-!/sxhkd/sxhkdrc
+!/sxhkd/*
+
+# dunst config (notification daemon)
+!/dunst/*
