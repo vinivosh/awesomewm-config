@@ -68,6 +68,9 @@
 # * Audio
 # * ############################################################################
 
+# pipewire
+!/pipewire/pipewire-pulse.conf
+
 # Audio — easyeffects presets and autoload configurations
 !/easyeffects/output/**/*
 !/easyeffects/autoload/**/*
