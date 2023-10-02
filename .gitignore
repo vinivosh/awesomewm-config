@@ -16,11 +16,15 @@
 
 
 # * ############################################################################
-# * bash, fish and other terminal realted stuff
+# * Shell (bash, fish) and Terminal (kitty) related stuff
 # * ############################################################################
 
+# Fish shell
 !/fish/config.fish
 !/fish/fish_variables
+
+# Kitty terminal emulator
+!/kitty/kitty.conf
 
 
 
