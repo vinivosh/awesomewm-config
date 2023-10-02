@@ -49,6 +49,9 @@
 # Notifications — dunst 
 !/dunst/dunstrc
 
+# Wallpapers — nitrogen
+!/nitrogen/nitrogen.cfg
+
 
 
 # * ############################################################################
