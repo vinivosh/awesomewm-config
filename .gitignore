@@ -16,7 +16,7 @@
 
 
 # * ############################################################################
-# * Shell (bash, fish) and Terminal (kitty) related stuff
+# * Shell (bash, fish) and Terminal (Kitty) related stuff
 # * ############################################################################
 
 # Fish shell
@@ -46,14 +46,14 @@
 !/bspwm/bspwmrc
 !/sxhkd/sxhkdrc
 
-# Top bar — polybar
+# Top bar — Polybar
 !/polybar/config.ini
 !/polybar/launch.sh
 
-# Notifications — dunst 
+# Notifications — dDunst 
 !/dunst/dunstrc
 
-# Wallpapers — nitrogen
+# Wallpapers — Nitrogen
 !/nitrogen/nitrogen.cfg
 
 # App launcher — rofi
@@ -62,6 +62,21 @@
 !/rofi/config.rasi
 !/rofi/powermenu.rasi
 !/rofi/powermenu.sh
+
+####################
+# Some cherry picked apps from xfce4
+#
+# Thunar! Also, xfce4 settings manager is pretty useful, so I use it for some stuff
+
+# Misc configs
+!/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml
+!/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml
+!/xfce4/xfconf/xfce-perchannel-xml/displays.xml
+!/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
+
+# File manager (GUI) — Thunar
+!/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
+####################
 
 
 
