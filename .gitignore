@@ -67,6 +67,7 @@ fsearch/fsearch.conf
 # * ############################################################################
 
 !/goverlay/MangoHud.conf
+!/MangoHud/MangoHud.conf
 
 
 
