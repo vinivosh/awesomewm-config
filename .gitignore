@@ -78,6 +78,9 @@
 !/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 ####################
 
+# Mime associations (default apps to open each file type)
+!/mimeapps.list
+
 
 
 # * ############################################################################
