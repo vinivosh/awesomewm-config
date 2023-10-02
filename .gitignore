@@ -46,6 +46,9 @@
 !/bspwm/bspwmrc
 !/sxhkd/sxhkdrc
 
+# Compositor — picom
+!/picom.conf
+
 # Top bar — Polybar
 !/polybar/config.ini
 !/polybar/launch.sh
