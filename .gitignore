@@ -30,10 +30,10 @@
 
 # Include bspwm-related stuff
 !/bspwm/bspwmrc
-!/sxhkd/*
+!/sxhkd/sxhkdrc
 
 # Notifications — dunst 
-!/dunst/*
+!/dunst/dunstrc
 
 
 
@@ -44,3 +44,12 @@
 # Audio — easyeffects presets and autoload configurations
 !/easyeffects/output/**/*
 !/easyeffects/autoload/**/*
+fsearch/fsearch.conf
+
+
+
+# * ############################################################################
+# * Miscellaneous
+# * ############################################################################
+
+!/fsearch/fsearch.conf
