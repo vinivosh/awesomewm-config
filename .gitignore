@@ -48,12 +48,20 @@
 
 # Top bar — polybar
 !/polybar/config.ini
+!/polybar/launch.sh
 
 # Notifications — dunst 
 !/dunst/dunstrc
 
 # Wallpapers — nitrogen
 !/nitrogen/nitrogen.cfg
+
+# App launcher — rofi
+!/rofi/arc_dark_colors.rasi
+!/rofi/arc_dark_transparent_colors.rasi
+!/rofi/config.rasi
+!/rofi/powermenu.rasi
+!/rofi/powermenu.sh
 
 
 
