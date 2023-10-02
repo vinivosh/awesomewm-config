@@ -1,0 +1,120 @@
+#! /bin/sh
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+
+
+
+bspc monitor DP-0 -d I II III IV V
+bspc monitor HDMI-0 -d VI VII VIII IX X
+
+bspc config border_width	4
+bspc config window_gap      24
+
+bspc config top_padding		0
+bspc config left_padding	0
+bspc config right_padding	0
+bspc config bottom_padding	0
+
+bspc config split_ratio 			0.5
+bspc config borderless_monocle		true
+bspc config gapless_monocle			false
+bspc config pointer_follows_focus	false
+bspc config focus_follows_pointer	false
+
+# Border
+bspc config focused_border_color        "#c4c4c4"
+bspc config normal_border_color         "#424242"
+bspc config active_border_color         "#424242"
+
+################################################################################
+# Window rules
+################################################################################
+
+bspc rule -a Gimp desktop='^3' state=floating follow=on
+# bspc rule -a librewolf desktop='^1'
+# bspc rule -a firefox desktop='^1'
+bspc rule -a Chromium desktop='^2'
+bspc rule -a mplayer2 state=floating
+bspc rule -a Yad state=floating
+bspc rule -a Kupfer.py focus=on
+bspc rule -a Screenkey manage=off
+
+bspc rule -a Pavucontrol state=floating layer=above sticky=on
+bspc rule -a Pasystray state=floating layer=above sticky=on
+bspc rule -a mpv state=fullscreen
+bspc rule -a SpeedCrunch state=floating focus=on layer=above sticky=on
+bspc rule -a steam_app_1794680 state=fullscreen focus=on private=on # Vampire Survivors
+bspc rule -a steam_app_0 state=fullscreen layer=normal focus=on private=on # Cruelty Squad (perhaps any non-Steam game on Steam?)
+bspc rule -a gamescope state=fullscreen layer=normal focus=on # Any game running on gamescope
+
+bspc rule -a '*:*:Picture-in-Picture' state=floating layer=above sticky=on private=on
+bspc rule -a '*:*:foobar2000 picture viewer' state=tiled layer=normal private=on
+bspc rule -a '*:*:Add/Remove Software' state=floating
+bspc rule -a 'flameshot:*:Configuration' state=floating
+bspc rule -a '*:*:About' state=floating
+bspc rule -a '*:*:Friends List' state=floating
+bspc rule -a '*:*:Lista de amigos' state=floating
+bspc rule -a 'Steam:*:Steam — Novidades' state=floating
+bspc rule -a 'last.fm scrobbler.exe:*:*' state=floating
+bspc rule -a 'Notepadqq:*:Search' state=floating private=on
+bspc rule -a 'Emoji-keyboard:*:Pick emoji' state=floating layer=above private=on
+bspc rule -a 'Thunar:*:File Operation Progress' state=floating layer=above private=on
+
+################################################################################
+
+
+
+#
+# Autostart
+#
+
+# NOTE: moved to ~/.profile
+# Set scaling for QT applications
+# export QT_AUTO_SCREEN_SCALE_FACTOR=0
+# export QT_SCREEN_SCALE_FACTORS=2
+# export QT_QPA_PLATFORMTHEME=qt5ct
+# export QT_SCALE_FACTOR=1.625
+# export QT_STYLE_OVERRIDE=kvantum
+
+# Set display from arandr saved script
+sh ~/.screenlayout/monitor.sh &
+# Bar
+~/.config/polybar/launch.sh &
+# Notifications
+/usr/bin/dunst &
+# Polkit
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+# Wallpaper
+nitrogen --restore &
+# Dex
+dex -a -s /etc/xdg/autostart/:~/.config/autostart/  &
+# Picom
+# picom -b &
+# Network Applet
+nm-applet --indicator &
+
+# Cursor
+xsetroot -cursor_name left_ptr &
+
+# Low battery notifier
+# ~/.config/bspwm/scripts/low_bat_notifier.sh
+
+# Picom (old config from Garuda Linux)
+# picom --experimental-backends --config /home/vini/.config/picom/picom.conf &
+
+# Load NVIDIA's configs
+nvidia-settings --load-config-only
+
+# Gamma corrections for each monitor
+xrandr --output DP-0 --gamma 1.125
+xrandr --output HDMI-0 --gamma 0.74:0.79:0.9
+
+# EasyEffects (audio equalizer)
+# Note: there seems to be no need for this if the "start service on boot" is turned on in EasyEffects' GUI
+# nohup easyeffects -l "Superlux HD668B"  --gapplication-service
+
+# Nicotine
+nicotine &
+
+# qbittorrent
+qbittorrent &
