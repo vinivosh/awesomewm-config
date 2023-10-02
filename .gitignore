@@ -110,4 +110,8 @@ fsearch/fsearch.conf
 # * Miscellaneous
 # * ############################################################################
 
+# Calculator — speedcrunch
+!/SpeedCrunch/SpeedCrunch.ini
+
+# Global searching — fsearch
 !/fsearch/fsearch.conf
