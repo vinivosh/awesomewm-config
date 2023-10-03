@@ -2,7 +2,7 @@
 *
 
 # # Exclude some weird stuff that kept insisting on being tracked by git...
-/lite-xl/lpm/
+# /lite-xl/lpm/
 
 # Include files ending with slash (a.k.a. directories)
 !*/
@@ -69,16 +69,13 @@
 ####################
 # Some cherry picked apps from xfce4
 #
-# Thunar! Also, xfce4 settings manager is pretty useful, so I use it for some stuff
+# xfce4 settings manager is pretty good, so I use it for some stuff
 
 # Misc configs
 !/xfce4/xfconf/xfce-perchannel-xml/keyboards.xml
 !/xfce4/xfconf/xfce-perchannel-xml/keyboard-layout.xml
 !/xfce4/xfconf/xfce-perchannel-xml/displays.xml
 !/xfce4/xfconf/xfce-perchannel-xml/xsettings.xml
-
-# File manager (GUI) — Thunar
-!/xfce4/xfconf/xfce-perchannel-xml/thunar.xml
 ####################
 
 # Mime associations (default apps to open each file type)
@@ -143,9 +140,6 @@ fsearch/fsearch.conf
 # * ############################################################################
 # * Miscellaneous
 # * ############################################################################
-
-# Calculator — speedcrunch
-!/SpeedCrunch/SpeedCrunch.ini
 
 # Global searching — fsearch
 !/fsearch/fsearch.conf
