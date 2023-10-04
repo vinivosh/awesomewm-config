@@ -143,3 +143,6 @@ fsearch/fsearch.conf
 
 # Global searching — fsearch
 !/fsearch/fsearch.conf
+
+# Vscode hidden folder in this repo
+!/.vscode/*
