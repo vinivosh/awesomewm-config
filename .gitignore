@@ -46,8 +46,10 @@
 !/bspwm/bspwmrc
 !/sxhkd/sxhkdrc
 
-# Compositor — picom
+# Compositor — picom (aur/picom-allusive)
 !/picom.conf
+# Old file from when I was using the EndeavourOS BSPWM variant default config and picom fork (extra/picom)
+!/picom-main-release.conf
 
 # Top bar — Polybar
 !/polybar/config.ini
@@ -112,7 +114,6 @@
 # Audio — easyeffects presets and autoload configurations
 !/easyeffects/output/**/*
 !/easyeffects/autoload/**/*
-fsearch/fsearch.conf
 
 
 
