@@ -88,9 +88,17 @@ sh ~/.screenlayout/monitor.sh &
 nitrogen --restore &
 # Dex
 dex -a -s /etc/xdg/autostart/:~/.config/autostart/  &
+
+# Load NVIDIA's configs
+nvidia-settings --load-config-only
+
+# Gamma corrections for each monitor
+xrandr --output DP-0 --gamma 1.125
+xrandr --output HDMI-0 --gamma 0.74:0.79:0.9
+
 # Picom
 # picom -b &
-picom -b --experimental-backends --backend glx
+picom -b --experimental-backends --backend glx &
 # Network Applet
 nm-applet --indicator &
 
@@ -102,13 +110,6 @@ xsetroot -cursor_name left_ptr &
 
 # Picom (old config from Garuda Linux)
 # picom --experimental-backends --config /home/vini/.config/picom/picom.conf &
-
-# Load NVIDIA's configs
-nvidia-settings --load-config-only
-
-# Gamma corrections for each monitor
-xrandr --output DP-0 --gamma 1.125
-xrandr --output HDMI-0 --gamma 0.74:0.79:0.9
 
 # EasyEffects (audio equalizer)
 # Note: there seems to be no need for this if the "start service on boot" is turned on in EasyEffects' GUI
