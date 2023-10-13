@@ -63,3 +63,4 @@ application/x-ipynb+json=notepadqq.desktop;
 application/zip=peazip.desktop;
 application/x-ms-shortcut=notepadqq.desktop;
 inode/symlink=notepadqq.desktop;
+image/svg+xml=org.xfce.ristretto.desktop;
