@@ -42,24 +42,10 @@
 # * Window Manager (X11) and desktop environment related stuff
 # * ############################################################################
 
-# Include bspwm-related stuff
-!/bspwm/bspwmrc
-!/sxhkd/sxhkdrc
-
 # Compositor — picom (aur/picom-allusive)
 !/picom.conf
 # Old file from when I was using the EndeavourOS BSPWM variant default config and picom fork (extra/picom)
 !/picom-main-release.conf
-
-# Top bar — Polybar
-!/polybar/config.ini
-!/polybar/launch.sh
-
-# Notifications — dDunst 
-!/dunst/dunstrc
-
-# Wallpapers — Nitrogen
-!/nitrogen/nitrogen.cfg
 
 # App launcher — rofi
 !/rofi/arc_dark_colors.rasi
@@ -67,6 +53,31 @@
 !/rofi/config.rasi
 !/rofi/powermenu.rasi
 !/rofi/powermenu.sh
+
+# * 
+# * BSPWM Session
+# * 
+
+# Include bspwm-related stuff
+!/bspwm/bspwmrc
+!/sxhkd/sxhkdrc
+
+# Top bar — Polybar
+!/polybar/config.ini
+!/polybar/launch.sh
+
+# Notifications — Dunst 
+!/dunst/dunstrc
+
+# Wallpapers — Nitrogen
+!/nitrogen/nitrogen.cfg
+
+# * 
+# * AwesomeWM Session
+# * 
+
+!/awesome/rc.lua
+!/awesome/themes/**
 
 ####################
 # Some cherry picked apps from xfce4
