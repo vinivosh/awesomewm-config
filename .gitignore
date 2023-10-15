@@ -76,8 +76,8 @@
 # * AwesomeWM Session
 # * 
 
-!/awesome/rc.lua
-!/awesome/themes/**
+!/awesome.bak/rc.lua
+!/awesome.bak/themes/**
 
 ####################
 # Some cherry picked apps from xfce4
