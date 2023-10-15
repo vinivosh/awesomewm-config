@@ -16,8 +16,6 @@
 
 [[https://github.com/awesomeWM/awesome][file:https://img.shields.io/badge/AwesomeWM-git-blue.svg?logo=lua]] [[LICENSE][https://img.shields.io/badge/License-MIT-yellow.svg]]
 
-Testing modifications to git subtree
-
 #+HTML:</div>
 
 #+HTML:<a href="https://awesomewm.org/"><img alt="AwesomeWM Logo" height="160" align = "left" src="https://upload.wikimedia.org/wikipedia/commons/0/07/Awesome_logo.svg"></a>
