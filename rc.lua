@@ -4,6 +4,9 @@
 -- |_|  \__,_| \_/ \___|_| |_|  https://github.com/raven2cz
 --
 -- A customized rc.lua for awesomewm-git (master branch) (https://awesomewm.org//)
+-- 
+-- * Edited by @vinivosh
+-- * https://github.com/vinivosh
 
 -- awesome_mode: api-level=4:screen=on
 -- If LuaRocks is installed, make sure that packages installed through it are
